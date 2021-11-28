@@ -2,6 +2,13 @@ import 'dart:math';
 
 import 'package:dart_flutterly/dart_flutterly.dart' as dart_flutterly;
 
+class Singleton {
+  Singleton._privateConstructor();
+
+  static final _instance = Singleton._privateConstructor();
+  factory Singleton() => _instance;
+}
+
 class Point {
   const Point({required this.x, required this.y});
 
